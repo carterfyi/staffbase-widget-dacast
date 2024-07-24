@@ -20,9 +20,9 @@ import { JSONSchema7 } from "json-schema";
  */
 export const configurationSchema: JSONSchema7 = {
   properties: {
-    message: {
+    contentid: {
       type: "string",
-      title: "message",
+      title: "Dacast Content ID"
     },
   },
 };
@@ -32,7 +32,7 @@ export const configurationSchema: JSONSchema7 = {
  * @see https://rjsf-team.github.io/react-jsonschema-form/docs/api-reference/uiSchema
  */
 export const uiSchema: UiSchema = {
-  message: {
-    "ui:help": "Please enter a message to show",
+  contentid: {
+    "ui:help": "Enter Content ID from Dacast",
   },
 };

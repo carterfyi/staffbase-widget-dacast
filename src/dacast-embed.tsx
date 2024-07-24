@@ -18,10 +18,10 @@ import { BlockAttributes } from "widget-sdk";
  * React Component
  */
 export interface DacastEmbedProps extends BlockAttributes {
-  message: string;
+  contentid: string;
 }
 
-export const DacastEmbed = ({ message, contentLanguage }: DacastEmbedProps): ReactElement => {
-  return <div>Hello {message} {contentLanguage}</div>;
+export const DacastEmbed = ({ contentid }: DacastEmbedProps): ReactElement => {
+  return <div>Dacast Content ID: {contentid} </div>;
 };
 

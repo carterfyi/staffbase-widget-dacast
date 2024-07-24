@@ -24,7 +24,7 @@ import pkg from '../package.json'
  * Define which attributes are handled by the widget. This should be also reflected in configuration schema
  */
 const widgetAttributes: string[] = [
-  'message',
+  'contentid',
 ];
 
 /**
@@ -33,7 +33,7 @@ const widgetAttributes: string[] = [
  */
 const factory: BlockFactory = (BaseBlockClass, _widgetApi) => {
   /**
-   *  <dacast-embed message="world!"></dacast-embed>
+   *  <dacast-embed contentid="world!"></dacast-embed>
    */
   return class DacastEmbedBlock extends BaseBlockClass implements BaseBlock {
     public constructor() {
