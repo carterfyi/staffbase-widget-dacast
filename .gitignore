@@ -13,3 +13,6 @@ yarn-error.log
 .idea/
 .vscode/
 .env
+
+# Mine
+scratch.txt
