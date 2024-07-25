@@ -1,7 +1,7 @@
 {
   "name": "@aag/dacast-embed",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "A Staffbase custom widget for embedding Dacast video players.",
   "scripts": {
     "start": "webpack serve --open --config webpack.dev.ts",
     "build": "webpack --config webpack.prod.ts",
@@ -14,7 +14,7 @@
     "lint:fix": "eslint . --ext .ts,.tsx --fix"
   },
   "keywords": [],
-  "author": "",
+  "author": "Carter Fritsch",
   "license": "ISC",
   "dependencies": {
     "@staffbase/widget-sdk": "3.12.8",
