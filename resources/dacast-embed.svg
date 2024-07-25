@@ -1,3 +1,118 @@
-<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>dot</title>
-<path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" />
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="32"
+   height="32"
+   viewBox="0 0 29.0732 32.089653"
+   fill="none"
+   version="1.1"
+   id="svg13"
+   sodipodi:docname="dacast-embed.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview13"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="22.402778"
+     inkscape:cx="22.519529"
+     inkscape:cy="16.471172"
+     inkscape:window-width="3840"
+     inkscape:window-height="2080"
+     inkscape:window-x="2869"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg13" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="M 26.6224,24.921153 0.52707894,1.1597733 C 0.07375084,0.7469923 0.36982694,0 0.98676494,0 H 12.1301 c 3.3434,0 6.2953,0.6876353 8.8556,2.0629033 2.5603,1.34472 4.5482,3.23954 5.9639,5.68446 1.4157,2.4143897 2.1236,5.1801897 2.1236,8.2974897 0,3.1173 -0.7079,5.8984 -2.1236,8.3433 -0.1059,0.1806 -0.2149,0.3583 -0.3272,0.533 z"
+     fill="#4967ee"
+     id="path1" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="m 0.53109394,30.929253 c -0.4542019,0.4125 -0.158348,1.1604 0.459027,1.1604 H 12.1301 c 3.3434,0 6.2953,-0.6723 8.8556,-2.0171 2.5602,-1.3752 4.5482,-3.27 5.9639,-5.6844 1.4157,-2.4449 2.1235,-5.226 2.1235,-8.3433 0,-3.1173 -0.7078,-5.8831 -2.1235,-8.2975097 -0.1025,-0.17709 -0.2081,-0.35129 -0.3166,-0.52261 z"
+     fill="#2899f6"
+     id="path2" />
+  <mask
+     id="mask0_1230_2170"
+     maskUnits="userSpaceOnUse"
+     x="0"
+     y="-1"
+     width="29"
+     height="27">
+    <path
+       fill-rule="evenodd"
+       clip-rule="evenodd"
+       d="M 26.0989,25.2938 0.217602,1.05077 C -0.232009,0.629624 0.0616392,-0.132507 0.673518,-0.132507 H 11.7255 c 3.316,0 6.2436,0.701571 8.7829,2.104717 2.5393,1.37196 4.511,3.30518 5.9151,5.79966 1.404,2.46333 2.1061,5.28513 2.1061,8.46563 0,3.1805 -0.7021,6.0179 -2.1061,8.5124 -0.1051,0.1843 -0.2133,0.3655 -0.3246,0.5439 z"
+       fill="#4967ee"
+       id="path9" />
+  </mask>
+  <g
+     mask="url(#mask0_1230_2170)"
+     id="g11"
+     style="display:inline"
+     transform="translate(-5.9900785e-8,-0.0428467)">
+    <g
+       filter="url(#filter0_d_1230_2170)"
+       id="g10">
+      <path
+         fill-rule="evenodd"
+         clip-rule="evenodd"
+         d="m 0.21828,31.1213 c -0.45053,0.4218 -0.157068,1.1866 0.455316,1.1866 H 11.7235 c 3.3164,0 6.2444,-0.6875 8.784,-2.0626 2.5396,-1.4063 4.5115,-3.3439 5.9157,-5.8128 1.4042,-2.5001 2.1064,-5.344 2.1064,-8.5317 0,-3.1876 -0.7022,-6.01589 -2.1064,-8.48476 C 26.3215,7.23495 26.2168,7.05681 26.1091,6.88162 Z"
+         fill="#2899f6"
+         id="path10" />
+    </g>
+  </g>
+  <defs
+     id="defs13">
+    <filter
+       id="filter0_d_1230_2170"
+       x="-3.58459"
+       y="4.1931801"
+       width="33.906399"
+       height="30.8032"
+       filterUnits="userSpaceOnUse"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         flood-opacity="0"
+         result="BackgroundImageFix"
+         id="feFlood11" />
+      <feColorMatrix
+         in="SourceAlpha"
+         type="matrix"
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+         result="hardAlpha"
+         id="feColorMatrix11" />
+      <feOffset
+         dx="-0.896147"
+         id="feOffset11" />
+      <feGaussianBlur
+         stdDeviation="1.34422"
+         id="feGaussianBlur11" />
+      <feColorMatrix
+         type="matrix"
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"
+         id="feColorMatrix12" />
+      <feBlend
+         mode="normal"
+         in2="BackgroundImageFix"
+         result="effect1_dropShadow_1230_2170"
+         id="feBlend12" />
+      <feBlend
+         mode="normal"
+         in="SourceGraphic"
+         in2="effect1_dropShadow_1230_2170"
+         result="shape"
+         id="feBlend13" />
+    </filter>
+  </defs>
 </svg>
