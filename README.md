@@ -1,10 +1,24 @@
-# aag / dacast-embed
+# dacast-embed
 This custom widget plugin for Staffbase was bootstraped with [@staffbase/create-widget](https://www.npmjs.com/package/@staffbase/create-widget). [Learn more about Staffbase Custom Widgets here.](https://developers.staffbase.com/frameworks/customwidget-development/#custom-widget-development)
+
+# Motivation
+The Dacast platform provides 2 mechanisms for embedding its video player in external sites: Via an `<iframe>`, or via a `<script>` tag. Staffbase's built-in embeded content plugin allows editors to load a given URL in an `<iframe>`, but for security it does not permit the use of `<script>` tags in its pages. However, Dacast's [Domain Control](https://www.dacast.com/support/knowledgebase/embedded-video-players) functionality only works from `<script>` embeds. To close this gap, this custom widget provides a simple wrapper for Dacast's `<script>` embedding. This allows Domain Control to limit the player to being loaded only from those domains specified in its configuration; presumably, only from your Staffbase site domain. 
+
+The widget accepts a single property: the **Content ID** for a DaCast Player.
+
+# Demo Screenshot
+![Demo](resources/demo.png)
+
 ## Installation
 
 ```bash
 $ npm install
 ```
+
+## TODO: 
+- [ ] Fix dynamic sizing headaches
+- [ ] Publish NPM Module
+- [ ] Explain Staffbase Installation
 
 ## Running the app
 
