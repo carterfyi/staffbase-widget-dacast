@@ -14,12 +14,12 @@
 import { BlockAttributes } from '@staffbase/widget-sdk';
 import React, { useEffect, ReactElement, useState } from 'react';
 
-export interface DacastEmbedProps extends BlockAttributes {
+export interface StaffbaseWidgetDacastProps extends BlockAttributes {
   contentid: string; // https://player.dacast.com/js/player.js?contentId={contentid}
 }
 
 
-export const DacastEmbed = ({ contentid }: DacastEmbedProps): ReactElement => {
+export const StaffbaseWidgetDacast = ({ contentid }: StaffbaseWidgetDacastProps): ReactElement => {
 
   const [playerHidden, setPlayerHidden] = useState(true);
 
@@ -33,7 +33,7 @@ export const DacastEmbed = ({ contentid }: DacastEmbedProps): ReactElement => {
         setPlayerHidden(false);
       }
       catch (e) {
-        console.error('DacastEmbed: Error Loading Dacast Player', e);
+        console.error('StaffbaseWidgetDacast: Error Loading Dacast Player', e);
       }
     }
   };
@@ -41,11 +41,11 @@ export const DacastEmbed = ({ contentid }: DacastEmbedProps): ReactElement => {
   useEffect(() => {
 
     if (!contentid) {
-      console.info('DacastEmbed: No content ID provided');
+      console.info('StaffbaseWidgetDacast: No content ID provided');
       return;
     }
     try {
-      console.info(`DacastEmbed: Loading Dacast Player with Content ID: ${contentid}`);
+      console.info(`StaffbaseWidgetDacast: Loading Dacast Player with Content ID: ${contentid}`);
       const script = document.createElement('script');
       script.src = `https://player.dacast.com/js/player.js?contentId=${contentid}`;
       script.async = true;
@@ -58,7 +58,7 @@ export const DacastEmbed = ({ contentid }: DacastEmbedProps): ReactElement => {
         document.head.removeChild(script);
       };
     } catch (e) {
-      console.error('DacastEmbed: Error loading Dacast Player Script', e);
+      console.error('StaffbaseWidgetDacast: Error loading Dacast Player Script', e);
 
     }
   }, [contentid]);

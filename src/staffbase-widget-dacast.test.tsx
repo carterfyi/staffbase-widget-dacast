@@ -1,11 +1,11 @@
 import React from "react"
 import {screen, render} from "@testing-library/react"
 
-import {DacastEmbed} from "./dacast-embed";
+import {StaffbaseWidgetDacast} from "./staffbase-widget-dacast";
 
-describe("DacastEmbed", () => {
+describe("StaffbaseWidgetDacast", () => {
     it("should render the component", () => {
-        render(<DacastEmbed contentLanguage="en_US" message="World"/>);
+        render(<StaffbaseWidgetDacast contentLanguage="en_US" message="World"/>);
 
         expect(screen.getByText(/Hello World/)).toBeInTheDocument();
     })

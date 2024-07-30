@@ -1,4 +1,4 @@
-# dacast-embed
+# staffbase-widget-dacast
 This custom widget plugin for Staffbase was bootstraped with [@staffbase/create-widget](https://www.npmjs.com/package/@staffbase/create-widget). [Learn more about Staffbase Custom Widgets here.](https://developers.staffbase.com/frameworks/customwidget-development/#custom-widget-development)
 
 # Motivation

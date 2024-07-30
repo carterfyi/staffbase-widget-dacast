@@ -19,7 +19,7 @@ import "webpack-dev-server";
 
 const config: webpack.Configuration = merge(common, {
   entry: {
-    "aag.dacast-embed": "./src/dev.ts",
+    "staffbase-widget-dacast": "./src/dev.ts",
     config: "./dev/config.tsx",
     bootstrap: "./dev/bootstrap.ts",
   },

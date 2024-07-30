@@ -15,7 +15,7 @@ import * as webpack from "webpack";
 
 const config: webpack.Configuration = {
   entry: {
-    "aag.dacast-embed": "./src/index.tsx",
+    "staffbase-widget-dacast": "./src/index.tsx",
   },
   module: {
     rules: [
@@ -29,7 +29,7 @@ const config: webpack.Configuration = {
         use: [{ loader: "@svgr/webpack", options: { icon: true } }],
       },
       {
-        test: /dacast-embed\.svg$/,
+        test: /staffbase-widget-dacast\.svg$/,
         use: [
           {
             loader: "url-loader",

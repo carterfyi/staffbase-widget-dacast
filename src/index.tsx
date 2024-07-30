@@ -15,9 +15,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import { BlockFactory, BlockDefinition, ExternalBlockDefinition, BaseBlock } from "widget-sdk";
-import { DacastEmbedProps, DacastEmbed } from "./dacast-embed";
+import { StaffbaseWidgetDacastProps, StaffbaseWidgetDacast } from "./staffbase-widget-dacast";
 import { configurationSchema, uiSchema } from "./configuration-schema";
-import icon from "../resources/dacast-embed.svg";
+import icon from "../resources/staffbase-widget-dacast.svg";
 import pkg from '../package.json'
 
 /**
@@ -33,15 +33,15 @@ const widgetAttributes: string[] = [
  */
 const factory: BlockFactory = (BaseBlockClass, _widgetApi) => {
   /**
-   *  <dacast-embed contentid="world!"></dacast-embed>
+   *  <staffbase-widget-dacast contentid="world!"></staffbase-widget-dacast>
    */
-  return class DacastEmbedBlock extends BaseBlockClass implements BaseBlock {
+  return class StaffbaseWidgetDacastBlock extends BaseBlockClass implements BaseBlock {
     public constructor() {
       super();
     }
 
-    private get props(): DacastEmbedProps {
-      const attrs = this.parseAttributes<DacastEmbedProps>();
+    private get props(): StaffbaseWidgetDacastProps {
+      const attrs = this.parseAttributes<StaffbaseWidgetDacastProps>();
       return {
         ...attrs,
         contentLanguage: this.contentLanguage,
@@ -49,7 +49,7 @@ const factory: BlockFactory = (BaseBlockClass, _widgetApi) => {
     }
 
     public renderBlock(container: HTMLElement): void {
-      ReactDOM.render(<DacastEmbed {...this.props} />, container);
+      ReactDOM.render(<StaffbaseWidgetDacast {...this.props} />, container);
     }
 
     /**
@@ -73,7 +73,7 @@ const factory: BlockFactory = (BaseBlockClass, _widgetApi) => {
  * The definition of the block, to let it successful register to the hosting application
  */
 const blockDefinition: BlockDefinition = {
-    name: "dacast-embed",
+    name: "staffbase-widget-dacast",
     factory: factory,
     attributes: widgetAttributes,
     blockLevel: 'block',
