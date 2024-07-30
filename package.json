@@ -16,7 +16,8 @@
   "files": [
     "dist"
   ],
-  "keywords": [],
+  "main": "dist/staffbase-widget-dacast.js",
+  "keywords": ["staffbase", "widget", "dacast"],
   "author": "Carter Fritsch",
   "license": "ISC",
   "dependencies": {
