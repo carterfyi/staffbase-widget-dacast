@@ -68,9 +68,10 @@ export const StaffbaseWidgetDacast = ({ contentid }: StaffbaseWidgetDacastProps)
     minHeight: "300px",
     overflow: "hidden",
     height: "100%",
+    aspectRatio: "16/9",
   }}>
 
-    <div id="dacast-player" hidden={playerHidden} style={{ position: 'relative' }}></div>
+    <div id="dacast-player" hidden={playerHidden} style={{ position: 'relative', minHeight: "360px", width: "100%", height: "100%"}}></div>
   </div>
     ;
 };
