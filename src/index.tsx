@@ -79,7 +79,7 @@ const blockDefinition: BlockDefinition = {
     blockLevel: 'block',
     configurationSchema: configurationSchema,
     uiSchema: uiSchema,
-    label: 'Dacast Embed',
+    label: 'Dacast Embeded Player',
     iconUrl: icon
 };
 

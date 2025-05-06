@@ -1,7 +1,7 @@
 {
   "name": "staffbase-widget-dacast",
-  "version": "1.0.0",
-  "description": "A custom widget for embedding dacast video players in Staffbase.",
+  "version": "1.0.1",
+  "description": "A staffbase custom widget for embedding dacast-hosted video players.",
   "scripts": {
     "start": "webpack serve --open --config webpack.dev.ts",
     "build": "webpack --config webpack.prod.ts",
@@ -11,7 +11,8 @@
     "type-check": "tsc --pretty --noEmit",
     "type-check:watch": "tsc --pretty --noEmit --watch",
     "lint": "eslint . --ext .ts,.tsx",
-    "lint:fix": "eslint . --ext .ts,.tsx --fix"
+    "lint:fix": "eslint . --ext .ts,.tsx --fix",
+    "prepack": "npm run build"
   },
   "files": [
     "dist"
