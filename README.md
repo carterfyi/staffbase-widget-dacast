@@ -2,23 +2,35 @@
 This custom widget plugin for Staffbase was bootstraped with [@staffbase/create-widget](https://www.npmjs.com/package/@staffbase/create-widget). [Learn more about Staffbase Custom Widgets here.](https://developers.staffbase.com/frameworks/customwidget-development/#custom-widget-development)
 
 # Motivation
-The Dacast platform provides 2 mechanisms for embedding its video player in external sites: Via an `<iframe>`, or via a `<script>` tag. Staffbase's built-in embeded content plugin allows editors to load a given URL in an `<iframe>`, but for security it does not permit the use of `<script>` tags in its pages. However, Dacast's [Domain Control](https://www.dacast.com/support/knowledgebase/embedded-video-players) functionality only works from `<script>` embeds. To close this gap, this custom widget provides a simple wrapper for Dacast's `<script>` embedding. This allows Domain Control to limit the player to being loaded only from those domains specified in its configuration; presumably, only from your Staffbase site domain. 
+The Dacast platform provides 2 mechanisms for embedding its video player in external sites: Via an `<iframe>`, or via a `<script>` tag. Staffbase's built-in embeded content plugin allows editors to load a given URL in an `<iframe>`, but for security it does not permit the use of `<script>` tags in its pages. However, Dacast's [Domain Control](https://www.dacast.com/support/knowledgebase/embedded-video-players) functionality only works from `<script>` embeds. To close this gap, this custom widget provides a simple wrapper for Dacast's `<script>` embedding. This allows Domain Control to limit the player to being loaded only from those domains specified in its configuration; presumably, only from your Staffbase site domain.
 
 The widget accepts a single property: the **Content ID** for a DaCast Player.
 
 # Demo Screenshot
 ![Demo](resources/demo.png)
 
-## Installation
+# Installation
+See Staffbase's documentation for custom widget installation instructions:
+[Installing a Custom Widget to the Staffbase Platform](https://support.staffbase.com/hc/en-us/articles/360021196079-Installing-a-Custom-Widget-to-the-Staffbase-Platform)
 
+# 3rd Party Disclaimer
+This is a custom widget intened for installation on an instance of the Staffbase platform by organization administrators. It is **not** an official product of either Staffbase *or* DaCast, and is provided as-is with no warranty or support - use at your own risk. If you encounter problems installing or using the widget that you think may be the result of bugs in the plugin, please open an issue in this repository.
+
+# Development
+## Prerequisites
+1. Node.js 18 - I use & recommend [fnm](https://github.com/Schniz/fnm) for managing node versions.
+2. The Content ID from a DaCast video or livestream channel to test with (Playlist Support Not Yet Tested)
+
+## Development Environment Setup
 ```bash
-$ npm install
+$ npm install # Install dependencies
+$ npm start # Start the webpack development server
 ```
 
-## TODO: 
-- [ ] Fix dynamic sizing headaches
-- [ ] Publish NPM Module
-- [ ] Explain Staffbase Installation
+## TODO:
+- [X] Publish NPM Module
+- [X] Fix dynamic sizing headaches
+- [X] Explain Staffbase Installation
 
 ## Running the app
 
@@ -37,4 +49,4 @@ $ npm install
 
 ## Building the form for configuration
 
-This project uses [react-jsonschema-form](https://rjsf-team.github.io/react-jsonschema-form/) for configuring the widget properties. For more information consult their [documentation](https://rjsf-team.github.io/react-jsonschema-form/docs/) 
+This project uses [react-jsonschema-form](https://rjsf-team.github.io/react-jsonschema-form/) for configuring the widget properties. For more information consult their [documentation](https://rjsf-team.github.io/react-jsonschema-form/docs/)
