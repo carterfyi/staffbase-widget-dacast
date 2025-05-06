@@ -1,6 +1,6 @@
 {
   "name": "staffbase-widget-dacast",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "description": "A custom widget for embedding dacast video players in Staffbase.",
   "scripts": {
     "start": "webpack serve --open --config webpack.dev.ts",
