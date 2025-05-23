@@ -71,7 +71,7 @@ export const StaffbaseWidgetDacast = ({ contentid }: StaffbaseWidgetDacastProps)
     aspectRatio: "16/9",
   }}>
 
-    <div id="dacast-player" hidden={playerHidden} style={{ position: 'relative', minHeight: "360px", width: "100%", height: "100%"}}></div>
+    <div id="dacast-player" hidden={playerHidden} style={{ position: 'relative', width: "100%", height: "100%"}}></div>
   </div>
     ;
 };
