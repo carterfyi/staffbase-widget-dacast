@@ -29,10 +29,6 @@ jobs:
 
     - name: Upload artifact
       uses: actions/upload-artifact@v3
-      id: upload-artifact
       with:
         name: build-artifact
         path: ./dist # Adjust the path to your build output directory
-
-    - name: Generate public URL
-      run: "echo Artifact URL: ${{ steps.upload-artifact.outputs.download-url }}"
