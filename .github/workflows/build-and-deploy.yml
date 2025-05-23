@@ -27,8 +27,8 @@ jobs:
     - name: Build project
       run: npm run build
 
-    - name: Upload artifact
-      uses: actions/upload-artifact@v3
-      with:
-        name: build-artifact
-        path: ./dist # Adjust the path to your build output directory
+    # - name: Upload artifact
+    #   uses: actions/upload-artifact@v3
+    #   with:
+    #     name: build-artifact
+    #     path: ./dist # Adjust the path to your build output directory
