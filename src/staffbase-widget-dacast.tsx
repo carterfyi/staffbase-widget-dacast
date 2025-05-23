@@ -29,7 +29,7 @@ export const StaffbaseWidgetDacast = ({ contentid }: StaffbaseWidgetDacastProps)
     if (window.dacast) {
       // Call the global function or perform any actions needed
       try {
-        window.dacast(contentid, "dacast-player"); // https://www.dacast.com/player-api-documentation/#aGettingstarted-UsingtheAPI
+        window.dacast(contentid, `dacast-${contentid.slice(-8)}`); // https://www.dacast.com/player-api-documentation/#aGettingstarted-UsingtheAPI
         setPlayerHidden(false);
       }
       catch (e) {
@@ -71,7 +71,7 @@ export const StaffbaseWidgetDacast = ({ contentid }: StaffbaseWidgetDacastProps)
     aspectRatio: "16/9",
   }}>
 
-    <div id="dacast-player" hidden={playerHidden} style={{ position: 'relative', width: "100%", height: "100%"}}></div>
+    <div id={`dacast-${contentid.slice(-8)}`} hidden={playerHidden} style={{ position: 'relative', width: "100%", height: "100%"}}></div>
   </div>
     ;
 };
