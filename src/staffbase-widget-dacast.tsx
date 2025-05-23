@@ -64,8 +64,8 @@ export const StaffbaseWidgetDacast = ({ contentid }: StaffbaseWidgetDacastProps)
   }, [contentid]);
 
   return <div style={{
-    minWidth: "400px",
-    minHeight: "300px",
+    minWidth: "160px",
+    minHeight: "90px",
     overflow: "hidden",
     height: "100%",
     aspectRatio: "16/9",
